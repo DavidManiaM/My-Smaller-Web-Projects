@@ -1,0 +1,41 @@
+.header{
+    height: 75px;
+    padding: 0 32px;
+
+    background: aliceblue;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+
+    > .left{
+        display: flex;
+        flex-direction: row;
+        gap: 128px;
+        align-self: stretch;
+
+        > .dropdown-container{
+
+            align-self: stretch;
+
+            > .dropdown-header{
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                align-self: stretch;
+
+                > span{
+                    font-size: 24px;
+                }
+
+                > svg{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
+
+}

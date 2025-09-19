@@ -1,0 +1,20 @@
+html, body{
+    height: 100vh;
+    margin: 0;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hover{
+    --transition-time: 300ms;
+    transition: var(--transition-time) ease;
+}
+.hover:hover{
+    --transition-time: 300ms;
+    --scale-factor: 1.1;
+    cursor: pointer;
+    transform: scale(var(--scale-factor));
+    transition: var(--transition-time) ease;
+}
