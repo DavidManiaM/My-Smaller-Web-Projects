@@ -1,0 +1,84 @@
+*{
+    user-select: none;
+    color: white;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+}
+#gameContainer{
+    text-align: center;
+    height: 0;
+}
+#gameBoard{
+    border: 3px solid black;
+}
+#score{
+    font-family: "Permanent Marker", cursive;
+    font-size: 100px;
+}
+#resetButton{
+    font-family: "Permanent Marker", cursive;
+    position: absolute;
+    top: 60%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#stats{
+    position: relative;
+    top: -80px;
+}
+
+#scoreText{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+
+#upgrade{
+    position: relative;
+    top: -5px;
+}
+
+#upgrade *{
+    background-color: #111;
+    border: none;
+    color: lightblue;
+    border-radius: 3px;
+    height: 40px;
+    margin: 0;
+    position: relative;
+    top: 10px;
+    z-index: 100;
+}
+
+#upgrade button{
+    width: 170px;
+    transition: 0.3s;
+}
+
+#upgrade button:hover{
+    cursor: pointer;
+    width: 220px;
+    transition: 0.3s;
+}
+
+canvas{
+    position: relative;
+    top: -40px;
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 1550px 750px;
+}
+#diffIncreaseRewardText{
+    position: relative;
+    top: 0;
+}

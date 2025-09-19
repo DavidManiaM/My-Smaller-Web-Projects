@@ -1,0 +1,81 @@
+/*#gameContainer{
+    text-align: center;
+    width: min-content;
+    height: min-content;
+    border: 3px solid black;
+}
+#gameBoard{
+}*/
+
+:root{
+    --menuContainerHeight: 60px;
+    --menuContainerTopPadding: 5px;
+    --menuWidth: 80%;
+    --menuTopPadding: 5px;
+    --menuHeight: calc(var(--menuContainerHeight) - 2*var(--menuContainerTopPadding));
+}
+
+*{
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#gameContainer{
+    text-align: center;
+}
+
+#gameBoard:hover{
+    cursor: crosshair;
+}
+
+#menuContainer{
+    position: sticky;
+    top: 0;
+    height: var(--menuContainerHeight);
+    background-color: #eee;
+}
+
+#menu{
+    display: inline-block;
+    background-color: lightgrey;
+    position: relative;
+    top: var(--menuContainerTopPadding);
+    height: var(--menuHeight);
+    width: var(--menuWidth);
+    border-radius: 2px;
+}
+
+#menu .menuOption{
+    display: inline-block;
+    height: calc(var(--menuHeight) - 2*var(--menuTopPadding) - 5px);
+    position: relative;
+    top: var(--menuTopPadding);
+    width: 120px;
+    margin-left: 20px;
+    /*background-color: blueviolet;*/
+    font-size: 25px;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+#menu .menuOption:hover{
+    cursor: pointer;
+}
+
+#menu #colorExample{
+    width: calc(var(--menuHeight) - 2*var(--menuTopPadding) - 5px);;
+    height: calc(var(--menuHeight) - 2*var(--menuTopPadding) - 5px);
+    background-color: black;
+}
+
+#menu #rectangle{
+    width: 120px;
+    height: 30px;
+    height: calc(var(--menuHeight) - 2*var(--menuTopPadding) - 5px);
+    background-color: red;
+}

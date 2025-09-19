@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+canvas{
+    background-image: url(./images/MonkeyMeadow_No_UI.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 3px solid black;
+    padding: 0;
+    margin: 0;
+    left: auto;
+    top: auto;
+}

@@ -1,0 +1,58 @@
+#difficulty{
+    width: 450px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -51%);
+    font-size: 40px;
+    z-index: 100;
+}
+
+#difficulty button{
+    transition: 0.2s;
+    font-size: 20px;
+    width: 120px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#difficulty button:hover{
+    cursor: pointer;
+    background-color: rgb(234, 230, 230);
+}
+
+#difficulty button:hover{
+    transition: 0.2s;
+    width: 140px;
+    height: 90px;
+}
+
+#difficulty button:active{
+    background-color: lightgray;
+}
+
+#gameContainer{
+    text-align: center;
+}
+#gameBoard{
+    border: 3px solid black;
+}
+#score{
+    font-family: "Permanent Marker", cursive;
+    font-size: 100px;
+}
+#resetBtn{
+    font-family: "Permanent Marker", cursive;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="gameContainer">
+        <div id="upgrade">
+            <button id="speedUpgrade">Upgrade projectile speed:<br> -250$</button>
+            <button id="damageUpgrade">Upgrade damage:<br> -500$</button>
+            <button id="healthUpgrade">Upgrade health regen:<br> -250$</button>
+            <button id="shootUpgrade">Upgrade shooting speed:<br> -250$</button>
+            <button id="difficultyIncrease">Increase difficulty:<br> +<span id="diffIncreaseRewardText">500$</span></button>
+        </div>
+        <canvas id="gameBoard" width="1550" height="750">
+            <img id="playerImg" src="player2.jfif"/>
+            <img id="enemyImg1" src="enemy.jfif"/>
+            <img id="enemyImg2" src="enemy2.jpg"/>
+            <img id="enemyImg3" src="enemy3.jpg"/>
+            <img id="enemyImg4" src="enemy4.png"/>
+        </canvas>
+        <div id="stats">
+            <span>Health: </span><span id="healthText">100</span>
+            <pre style="display: inline;">    </pre>
+            <span>Money: </span><span id="moneyText">0</span>
+            <pre style="display: inline;">    </pre>
+            <span>Enemies: </span><span id="enemiesText">0</span>
+        </div>
+        <button id="resetButton" style="visibility: hidden;">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
