@@ -1,0 +1,148 @@
+.page-content-wrapper{
+
+    width: 100%;
+    background-color: #222;
+    color: white;
+
+    .page-content{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin: 0 auto;
+        width: 80%;
+    
+        > .accordion-container{
+    
+            align-self: stretch;
+            /* box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1); */
+    
+            > .accordion-header{
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                align-self: stretch;
+    
+                > span{
+                    font-size: 32px;
+                }
+    
+                > svg{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+    
+            > .accordion-content{
+    
+                border-radius: 8px;
+                scrollbar-width: none;
+    
+                margin-top: 16px;
+    
+                > .accordion-item{
+                    display: flex;
+                    padding: 10px 6px;
+                }
+    
+                > .accordion-item:not(:last-of-type){
+                    border-bottom: 1px solid #e2e2e2;
+                }
+            }
+        }
+    
+        > .games-accordion{
+    
+            > .accordion-header{
+                padding-bottom: 8px;
+                border-bottom: 1px solid #e2e2e2;
+            }
+    
+            > .accordion-content{
+    
+                background-color: #272727;
+                color: white;
+                border: 2px solid white;
+    
+                > .accordion-item{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    padding: 0;
+                    justify-content: space-between;
+                    border: none !important;
+                    
+                    > div{
+                        width: 47.5%;
+                    }
+    
+                    > .project-image-container{
+                        display: inline-block;
+                        position: relative;
+                        
+                        > img{
+                            display: block; /* remove bottom gap */
+                            width: 100%;    /* scale if you want responsive */
+                            height: auto;
+                        }
+                    }
+    
+                    > .project-description-container{
+    
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+    
+                        > .project-description{
+                            
+                        }
+    
+                        > .bottom{
+                            padding: 16px 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+    
+                > .accordion-item:nth-of-type(2n){
+                    > .project-image-container{
+                        order: 2;
+                    }
+    
+                    > .project-description-container{
+                        order: 1;
+    
+                        > .project-description{
+                            padding: 24px;
+                            padding-right: 0;
+                        }
+                    }
+                }
+    
+                > .accordion-item:nth-of-type(2n+1){
+                    > .project-image-container{
+                        order: 1;
+                    }
+    
+                    > .project-description-container{
+                        order: 2;
+    
+                        > .project-description{
+                            padding: 24px;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    
+        > .games-accordion.open{
+            > .accordion-content{
+                max-height: 1000px;
+            }
+        }
+    }
+
+}

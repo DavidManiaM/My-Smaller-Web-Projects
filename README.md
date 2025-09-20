@@ -12,7 +12,7 @@ A collection of my mini-games and challenges created in highschool
    git clone https://github.com/DavidManiaM/My-Smaller-Web-Projects.git
 
 ## Usage
-1. Open home.html in any browser
+1. Open home/html/home.html in any browser
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
