@@ -1,4 +1,4 @@
-document.title = "Canvas";
+document.title = "Paint";
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 let w = canvas.width;
@@ -16,7 +16,7 @@ let lineWidth = 2;
 window.addEventListener("wheel", (e) => {
     lineWidth += 0.25 * (e.deltaY < 0 ? 1 : -1);
     lineWidth = Math.max(lineWidth, 1);
-    lineWidth = Math.min(lineWidth, 5);
+    lineWidth = Math.min(lineWidth, 7);
 });
 
 
