@@ -10,11 +10,11 @@
         display: flex;
         align-items: center;
 
-        > .accordion-arrow{
+        .accordion-arrow{
             transform: rotate(0);
             transition: 300ms ease;
         }
-        > .accordion-arrow.open{
+        .accordion-arrow.open{
             transform: rotate(-180deg);
             transition: 300ms ease;
         }

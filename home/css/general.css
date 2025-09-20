@@ -5,10 +5,23 @@
 html, body{
     height: 100vh;
     margin: 0;
+
+    background-color: #222;
+    background: linear-gradient(
+        90deg,
+        #2f2f2f 0%,
+        #222 100%
+    );
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 150%;
 }
 

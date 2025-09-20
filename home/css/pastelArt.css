@@ -1,0 +1,144 @@
+.name-art-container{
+
+    width: 500px;
+    height: 500px;
+    transform: rotate(-5deg);
+
+    .name{
+
+        position: absolute;
+        z-index: 10;
+
+        path{
+            fill: white;
+        }
+
+        * {
+            width: 500px;
+            height: 500px;
+            z-index: 10;
+        }
+    }
+
+    .pastel-art{
+
+        z-index: 1;
+        position: relative;
+
+        > div{
+            border-radius: 999px;
+            z-index: 1;
+        }
+
+        .red{
+            position: absolute;
+            top: 80px;
+            width: 250px;
+            height: 80px;
+            transform: rotate(80deg);
+            background-color: #d89aa0;
+        }
+
+        .orange{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 300px;
+            height: 70px;
+            transform: rotate(-17deg);
+            background-color: #e2c6a6;
+        }
+
+        .yellow{
+            position: absolute;
+            top: 320px;
+            left: 80px;
+            width: 350px;
+            height: 60px;
+            transform: rotate(23deg);
+            background-color: #e2e2a5;
+        }
+
+        .green{
+            position: absolute;
+            top: 270px;
+            left: 130px;
+            width: 250px;
+            height: 50px;
+            transform: rotate(-65deg);
+            background-color: #a6e4b3;
+        }
+
+        .blue{
+            position: absolute;
+            top: 400px;
+            left: 100px;
+            width: 250px;
+            height: 40px;
+            transform: rotate(-30deg);
+            background-color: #bae1ff;
+        }
+
+    }
+
+    .bubble-container{
+
+        position: relative;
+
+        .bubble{
+            position: absolute;
+            border-radius: 50%;
+        }
+    }
+
+    .bubble-container.red{
+        width: 200px;
+        height: 170px;
+        top: -20px;
+        left: 13px;
+    }
+
+    .bubble-container.orange{
+        width: 210px;
+        height: 151px;
+        top: -126px;
+        left: 241px;
+    }
+
+    .bubble-container.yellow{
+        width: 240px;
+        height: 151px;
+        top: -1px;
+        left: 201px;
+    }
+
+    .bubble-container.green{
+        width: 190px;
+        height: 201px;
+        top: -314px;
+        left: 193px;
+    }
+
+    .bubble-container.blue{
+        width: 180px;
+        height: 141px;
+        top: -304px;
+        left: 93px;
+    }
+
+    .bubble-container.yellow2{
+        width: 180px;
+        height: 141px;
+        top: -574px;
+        left: 63px;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
