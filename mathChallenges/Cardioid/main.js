@@ -1,3 +1,4 @@
+document.title = "Cardioid generalization"
 let canvas = document.querySelector("canvas");
 let ctx = canvas.getContext('2d');
 let w = canvas.width;

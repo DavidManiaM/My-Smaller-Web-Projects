@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <canvas width="1200" height="650"></canvas>
+        <!-- <div id="options">
+        <label>#Points: </label><input type="number" id="NoPoints" /><br />
+        <label>#Dimensions: </label><input type="number" id="NoDims" /><br />
+        <label>#Line Width: </label><input type="number" id="lineW" /><br />
+        <button id="submitButton">Submit</button>
+        </div> -->
+
+        <button class="lock-values-button hover" id="modalOpenButton" style="--scale-factor: 1.05">Lock values</button>
+
+        <div class="lock-values-modal-wrapper hidden" id="modal">
+            <div class="lock-values-modal">
+                <div class="top">
+                    <span>Lock values</span>
+                    <svg id="modalCloseButton" class="hover" style="--scale-factor: 1.1"  width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" fill="white"/>
+                        <path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div class="form-element">
+                    <label>#Points: </label>
+                    <input type="number" id="NoPoints" />
+                </div>
+
+                <div class="form-element">
+                    <label>#Dimensions: </label>
+                    <input type="number" id="NoDims" />
+                </div>
+
+                <div class="form-element">
+                    <label>#Line Width: </label><input type="number" id="lineW" />
+                </div>
+
+                <div class="bottom">
+                    <button class="submit-button hover" style="--scale-factor: 1.05" id="submitButton">Confirm</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+        <script>
+            
+            const openModalButton = document.querySelector("#modalOpenButton");
+            const closeModalButton = document.querySelector("#modalCloseButton");
+            const submitModalButton = document.querySelector("#submitButton");
+            const modal = document.querySelector("#modal");
+
+            openModalButton.addEventListener("click", () => {modal.classList.remove("hidden");});
+            closeModalButton.addEventListener("click", () => {modal.classList.add("hidden");});
+            submitModalButton.addEventListener("click", () => {modal.classList.add("hidden");});
+
+        </script>
+    </body>
+</html>

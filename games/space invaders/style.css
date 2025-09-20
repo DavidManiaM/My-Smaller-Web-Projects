@@ -3,9 +3,12 @@
 }
 #gameContainer{
     text-align: center;
+    height: 99vh;
+    position: relative;
 }
 #gameBoard{
     border: 3px solid black;
+    height: 90%;
 }
 #score{
     font-family: "Permanent Marker", cursive;

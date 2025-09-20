@@ -1,3 +1,4 @@
+document.title = "Fractal Tree";
 let canvas = document.querySelector("canvas");
 let ctx = canvas.getContext('2d');
 let w = canvas.width;
@@ -90,12 +91,6 @@ function reset(thL, thR) {
     thetaRight = thR;
     branches = [new Branch(new Point(w / 2, h), new Point(w / 2, zoomout * h))];
     //branches[0].level = 0;
-    ctx.beginPath();
-    ctx.strokeStyle = "black";
-    ctx.moveTo(0, 0);
-    ctx.lineTo(w, h);
-    ctx.stroke();
-    ctx.closePath();
 
     createBranches(branches[0], Math.PI / 2, 0);
     console.log(`Branches: ${numberOfBranches}; Leaves: ${numberOfLeaves}`);

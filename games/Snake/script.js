@@ -120,35 +120,41 @@ function nextTick(){
 
 function findDirection(event){
     console.log(event.keyCode);
+
     function goingReset(){
         goingUp = false;
         goingDown = false;
         goingLeft = false;
         goingRight = false;
     }
+
     switch(event.keyCode){
-        case 82:
+        case 82: // R key to restart
             startGame();
             break;
-        case 37:
+        case 37: // Left arrow
+        case 65: // A key
             if(xVel != unitSize){
                 goingReset();
                 goingLeft = true;
             }
             break;
-        case 38:
+        case 38: // Up arrow
+        case 87: // W key
             if(yVel != unitSize){
                 goingReset();
                 goingUp = true;
             }
             break;
-        case 39:
+        case 39: // Right arrow
+        case 68: // D key
             if(xVel != -unitSize){
                 goingReset();
                 goingRight = true;
             }
             break;
-        case 40:
+        case 40: // Down arrow
+        case 83: // S key
             if(yVel != -unitSize){
                 goingReset();
                 goingDown = true;
@@ -158,6 +164,7 @@ function findDirection(event){
             break;
     }
 }
+
 
 function changeDirection(){
     if(goingUp){

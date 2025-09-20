@@ -9,7 +9,7 @@
         flex-direction: column;
         gap: 32px;
         margin: 0 auto;
-        width: 80%;
+        width: var(--page-content-width);
     
         > .accordion-container{
     
@@ -22,7 +22,7 @@
                 gap: 12px;
                 align-self: stretch;
     
-                > span{
+                span{
                     font-size: 32px;
                 }
     
@@ -37,8 +37,6 @@
                 border-radius: 8px;
                 scrollbar-width: none;
     
-                margin-top: 16px;
-    
                 > .accordion-item{
                     display: flex;
                     padding: 10px 6px;
@@ -50,18 +48,35 @@
             }
         }
     
-        > .games-accordion{
+        > .main-page-accordion{
     
             > .accordion-header{
                 padding-bottom: 8px;
-                border-bottom: 1px solid #e2e2e2;
+
+                flex-direction: column;
+
+                > .top {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 12px;
+                    align-self: stretch;
+                }
+
+                > .bottom{
+                    width: 100%;
+                    overflow: hidden;
+                    height: 0;
+                    border-radius: 5px;
+
+                    transition: height 300ms ease;
+                }
             }
     
             > .accordion-content{
     
                 background-color: #272727;
                 color: white;
-                border: 2px solid white;
+                border: 0px solid white;
     
                 > .accordion-item{
                     
@@ -74,6 +89,7 @@
                     
                     > div{
                         width: 47.5%;
+                        margin: auto 0;
                     }
     
                     > .project-image-container{
@@ -94,14 +110,34 @@
                         justify-content: space-between;
     
                         > .project-description{
-                            
+                            a {
+                                color: inherit;
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+
+                            span.title{
+                                font-size: 40px;
+                                font-weight: 500;
+                            }
+
+                            > .description{
+                                .formula{
+                                    text-align: center;
+                                    font-family: 'Consolas', 'Courier New', monospace;
+                                }
+                            }
+
+                            a:hover,
+                            a:focus {
+                                color: inherit;
+                            }
                         }
     
                         > .bottom{
                             padding: 16px 24px;
                             display: flex;
                             align-items: center;
-                            justify-content: flex-end;
                         }
                     }
                 }
@@ -118,6 +154,10 @@
                             padding: 24px;
                             padding-right: 0;
                         }
+
+                        > .bottom{
+                            justify-content: flex-start;
+                        }
                     }
                 }
     
@@ -133,14 +173,32 @@
                             padding: 24px;
                             padding-left: 0;
                         }
+
+                        > .bottom{
+                            justify-content: flex-end;
+                        }
                     }
                 }
             }
         }
     
-        > .games-accordion.open{
+        > .main-page-accordion.open{
+
+            > .accordion-header{
+                > .bottom{
+                    height: 5px;
+                    transition: height 300ms ease;
+
+                    /* box-shadow: 3px 8px 16px 0 rgba(253, 61, 2, 0.5);
+                    transition: box-shadow 300ms ease; */
+
+                    filter: blur(0.5px);
+                }
+            }
+
             > .accordion-content{
-                max-height: 1000px;
+                border: 2px solid white;
+                max-height: 4000px;
             }
         }
     }

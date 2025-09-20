@@ -39,7 +39,7 @@
         height: max-content;
         border: 0px solid #e2e2e2;
         
-        transition:  max-height 300ms ease, border-width 200ms ease;
+        transition:  max-height 300ms ease, border-width 200ms ease-in;
     }
 }
 
@@ -50,6 +50,6 @@
         height: max-content;
         border: 1px solid #e2e2e2;
 
-        transition: max-height 300ms ease, border-width 200ms ease;
+        transition: max-height 300ms ease, border-width 200ms ease-in;
     }
 }

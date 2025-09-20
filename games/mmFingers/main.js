@@ -1,3 +1,4 @@
+document.title = "MMM Cursors!";
 let canvas = document.getElementById("gameBoard");
 let ctx = canvas.getContext('2d');
 let width = canvas.width;
@@ -142,7 +143,7 @@ class Mouse {
 }
 
 let player = new Mouse;
-let enemies = [new Enemy(50, 100, 500, 3, 3, 500)];
+let enemies = [];
 let coins = [];
 let powers = [];
 

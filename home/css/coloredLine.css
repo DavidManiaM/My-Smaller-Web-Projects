@@ -1,0 +1,29 @@
+.colored-line{
+    position: relative;
+    overflow: hidden;
+    height: 5px;
+    width: 100%;
+
+    .gradient{
+        position: absolute;
+        width: 150%;
+        aspect-ratio: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        background-image: linear-gradient(
+            90deg,
+            hsl(226, 81%, 64%),
+            hsl(271, 81%, 64%),
+            hsl(316, 81%, 64%),
+            hsl(1, 81%, 64%),
+            hsl(46, 81%, 64%),
+            hsl(91, 81%, 64%),
+            hsl(136, 81%, 64%),
+            hsl(181, 81%, 64%)
+        );
+
+        animation: rotate 2s linear infinite;
+    }
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/accordion.css">
     <link rel="stylesheet" href="../css/pageContent.css">
     <link rel="stylesheet" href="../css/my-button.css">
+    <link rel="stylesheet" href="../css/coloredLine.css">
 </head>
 <body>
 
@@ -106,13 +107,20 @@
 
             <h1>My smaller web projects (2022 - 2024)</h1>
 
-            <div data-accordion-container class="accordion-container games-accordion">
+            <div data-accordion-container class="accordion-container main-page-accordion">
 
-                <div data-accordion-header class="accordion-header hover" style="--scale-factor: 1.005; display: flex;">
-                    <span>Games</span>
-                    <svg data-accordion-arrow class="accordion-arrow" width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
-                    </svg>
+                <div data-accordion-header class="accordion-header">
+                    <div class="top hover" style="--scale-factor: 1.005">
+                        <span>Games</span>
+                        <svg data-accordion-arrow class="accordion-arrow" width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="bottom">
+                        <div class="colored-line">
+                            <div class="gradient"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div data-accordion-content class="accordion-content">
@@ -124,10 +132,11 @@
                         </div>
                         <div class="project-description-container">
                             <div class="project-description">
-                                <span>
+                                <span class="title">BTD0</span><br>
+                                <span class="description">
                                     This is my proudest project so far: a recreation of the popular mobile and PC game 
                                     <a href="https://bloons.fandom.com/wiki/Bloons_TD_6" target="_blank" rel="noopener noreferrer">Bloons TD 6</a> 
-                                    (BTD6). It’s a tower defense game where players place towers ("monkeys") to pop the enemies ("bloons") before they 
+                                    (BTD6). It’s a tower defense game in which players place towers ("monkeys") to pop the enemies ("bloons") before they 
                                     reach the end of the track. Bloons appear in many types, each with different speed and durability. Some split into 
                                     weaker bloons when popped, while tougher ones break into multiple layers. Towers can be upgraded along different 
                                     paths, with each upgrade offering more power at a higher cost.  
@@ -139,12 +148,375 @@
 
                             <div class="bottom">
                                 <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
-                                    <button class="my-button">
-                                        <span class="label">Play</span>
-                                        <span class="gradient-container">
-                                            <span class="gradient"></span>
-                                        </span>
-                                    </button>
+                                    <a href="../../games/btd6/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Play</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/DontMissIt.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">Don't Miss It</span><br>
+                                <span class="description">
+                                    Don’t Miss It is a fast-paced reaction game where your goal is to catch falling items before they hit
+                                    the ground. You control a square-shaped player that moves horizontally across the screen, affected by
+                                    gravity and wall collisions. Press the spacebar to jump and navigate through the falling “food”
+                                    objects.
+                                </span><br><br>
+                                <span class="description">
+                                    Each item you catch increases your score, while letting any object slip past the bottom ends
+                                    the game. Some items are rare and give extra points, while others require extra skill to catch. The
+                                    challenge grows as items spawn more frequently, testing your reflexes and timing.
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../games/eating game/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Play</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/defend.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">Defend!</span><br>
+                                <span class="description">
+                                    Tower Defense is an engaging strategy game where you control a powerful central tower and defend it
+                                    against waves of approaching enemies. Players must manage resources, upgrade their tower, and
+                                    eliminate enemies before they reach the base.
+                                </span><br><br>
+                                <span class="description">
+                                    Enemies spawn continuously and increase in speed, health, and frequency over time, challenging your
+                                    reflexes and planning skills. The tower automatically targets the closest enemy, firing projectiles
+                                    to destroy them, while you earn money to upgrade shooting speed, projectile damage, tower health
+                                    regeneration, and more.
+                                </span><br><br>
+                                <span class="description">
+                                    With intuitive upgrades, escalating difficulty, and a focus on strategy and timing, Tower Defense
+                                    offers endless replayability as you strive to survive ever-growing waves of enemies.
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../games/Tower defense/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Play</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/SpaceInvaders.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">Space Invaders Demo</span><br>
+                                <span class="description">
+                                    This "Space Invaders" recreation is a fast-paced arcade shooter where you control a lone spaceship
+                                    being attacked by waves of alien invaders. Move your ship left and right and unleash a barrage of
+                                    bullets and rare rockets to destroy the advancing enemies.
+
+                                </span><br><br>
+                                <span class="description">
+                                    Enemies appear in rows, move side to side, and descend gradually, increasing the tension as the game
+                                    progresses. Hit enemies multiple times to eliminate them, score points, and survive the onslaught.
+                                    Watch for rare powerful projectiles that give you an edge in intense moments.
+                                </span><br><br>
+                                <span class="description">
+                                    Pay close attention to enemy movements, as the key to victory is understanding their spawning patterns.
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../games/space invaders/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Play</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/mmFingers.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">MMM Cursors</span><br>
+                                <span class="description">
+                                    "MMM Cursors!" is a recreation of the mobile arcade game "MMM Fingers" in which you control a small
+                                    cursor, dodging moving obstacles while collecting coins to increase your score. Use your mouse to
+                                    guide the cursor across the game board, avoiding enemies that move horizontally and vertically,
+                                    each following unpredictable patterns.
+                                </span><br><br>
+                                <span class="description">
+                                    Collect coins for points while staying alert—one collision with an enemy ends the run. The game
+                                    rewards quick reflexes, precise mouse control, and strategic movement to survive as long as possible.
+                                </span><br><br>
+                                <span class="description">
+                                    With simple controls, dynamic enemy movement, and random coin spawns, every playthrough is a unique
+                                    challenge.
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../games/mmFingers/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Play</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/snake.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">Snake</span><br>
+                                <span class="description">
+                                    This classic Snake game challenges players to guide a growing snake around a grid-based game board.
+                                    Navigate carefully using the arrow keys or WASD, collect the red food blocks to increase your score,
+                                    and watch your snake grow longer with each bite.
+                                </span><br><br>
+                                <span class="description">
+                                    Avoid colliding with the walls or your own tail — any mistake ends the game instantly. Choose from
+                                    multiple difficulty levels to test your reflexes, from a relaxed pace for beginners to a fast-moving
+                                    challenge for seasoned players.
+                                </span><br><br>
+                                <span class="description">
+                                    The game rewards strategic planning, quick thinking, and precise movements. Can you achieve the
+                                    highest score and survive as your snake grows longer and longer?
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../games/Snake/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Play</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+
+
+            <div data-accordion-container class="accordion-container main-page-accordion">
+
+                <div data-accordion-header class="accordion-header">
+                    <div class="top hover" style="--scale-factor: 1.005">
+                        <span>Math Challenges</span>
+                        <svg data-accordion-arrow class="accordion-arrow" width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="bottom">
+                        <div class="colored-line">
+                            <div class="gradient"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-accordion-content class="accordion-content">
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/fractalTree.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">Fractal tree</span><br>
+                                <span class="description">
+                                    This interactive fractal tree visualizes recursion and branching patterns. Starting from a single
+                                    trunk, each branch splits into two smaller branches, forming a tree-like structure. Branch colors
+                                    transition smoothly from red to green to blue, and branch thickness decreases with depth to create a
+                                    natural look.
+                                </span><br><br>
+                                <span class="description">
+                                    You can interact with the tree in real time: moving the mouse adjusts the branching angles, while
+                                    clicking increases the recursion depth, adding more branches and leaves. It's a dynamic way to
+                                    explore fractals, geometry, and the beauty of recursive structures.
+                                </span><br><br>
+                                <span class="description">
+                                    This project demonstrates fractals while illustrating the principles of trigonometric functions.
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../mathChallenges/fractal tree/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Check It Out</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/Cardioid.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">Cardioid</span><br>
+                                <span class="description">
+                                    This project visualizes a generalized cardioid, a curve formed by connecting points
+                                    evenly distributed around a circle according to a chosen “dimension” factor. Each
+                                    point on the circle is linked to another point determined by multiplying its index by
+                                    this factor, producing intricate, symmetric patterns. By adjusting the number of
+                                    points and the dimension factor, the code generates a wide variety of mathematical
+                                    and artistic designs, ranging from simple heart-shaped curves to complex
+                                    multi-dimensional star-like structures.
+                                </span><br><br>
+                                <span class="description">
+                                    Users can interact with the visualization in real time: moving the mouse changes the
+                                    number of points and the dimension factor, while the line thickness can also be
+                                    adjusted, allowing exploration of the geometric relationships and the effects of
+                                    scaling and multiplication on the curve. This project highlights the beauty of
+                                    modular arithmetic, symmetry, and geometric patterns in mathematics.
+                                </span><br><br>
+                                <span class="description">
+                                    If you want to lock one of the three parameters to observe the cardioid's behavior
+                                    more clearly, enter the desired value in the corresponding form input and press the
+                                    button.
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../mathChallenges/Cardioid/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Check It Out</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/julia.png" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span class="title">Julia Set Generator</span><br>
+                                <div class="description">
+                                    This program draws Julia sets on a canvas. Each pixel is a point in the complex
+                                    plane, and the program checks whether it “escapes” when we repeat the formula:
+                                    <p class="formula">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + c</p>If the point stays bounded,
+                                    it belongs to the Julia set and is shown in black. If it escapes, it is colored in
+                                    shades of gray, where lighter shades mean it escaped faster. By changing the values
+                                    of c (cx, cy), you can explore many different Julia sets and see how their shapes
+                                    change.
+                                </div><br>
+                                <span class="description">
+                                    Upon opening the web page, you will have to right click and click "Inspect"
+                                    (or "Inspect element"), and then click on the "Console". There, you will find 
+                                    functions with the form: update(cx, cy, maxIterations). You can copy one of those
+                                    functions, paste it in the console and press Enter, or you can create your own
+                                    unique Julia Set by plotting other values as cx and cy. Don't forget you can zoom out
+                                    on your page if the canvas is too big. You can also change the size of the canvas by
+                                    writing in the console: setSize(canvas, new_width, new_height) 
+                                </span><br><br>
+                                <span class="description">
+                                    The third argument of the update function defines the maximum number of iterations
+                                    calculated for every pixel. If your Julia Set is too faded (not black enough), then
+                                    run the command again, but decrease the third argument. If however your Julia Set is
+                                    too black and you can't see its details, run the command again, but increase the
+                                    third argument.
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../mathChallenges/julia/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Check It Out</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -154,10 +526,38 @@
                     <div data-accordion-item class="accordion-item">
                         
                         <div class="project-image-container">
-                            <img src="../images/btd.jpeg" alt="">
+                            <img src="../images/mandelbrot.png" alt="">
                         </div>
                         <div class="project-description-container">
-                            <div class="project-description">a</div>
+                            <div class="project-description">
+                                <span class="title">Mandelbrot Set Generator</span><br>
+                                <div class="description">
+                                    This program draws Mandelbrot sets on a canvas. Each pixel represents a point in the complex
+                                    plane, and the program checks whether it “escapes” when we repeatedly apply the formula:
+                                    <p class="formula">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + c</p>Here, z<sub>0</sub> = 0, and c is the complex
+                                    number corresponding to the pixel's position. If the sequence stays bounded, the point belongs
+                                    to the Mandelbrot set and is shown in black. If it escapes, it is colored in shades of gray,
+                                    where lighter shades indicate faster escape.
+                                </div><br>
+                                <span class="description">
+                                    If you want to make the canvas bigger or smaller, right click and choose "Inspect" (or "Inspect
+                                    element"), then click on the "Console". There, you can call the function <code>draw(w, h)</code>
+                                    (replace w and h width the desired width and height values).
+                                </span><br><br>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../mathChallenges/mandelbrot bw/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Check It Out</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -165,21 +565,45 @@
                     <div data-accordion-item class="accordion-item">
                         
                         <div class="project-image-container">
-                            <img src="../images/btd.jpeg" alt="">
+                            <img src="../images/WorleyNoise.png" alt="">
                         </div>
                         <div class="project-description-container">
-                            <div class="project-description">a</div>
-                        </div>
+                            <div class="project-description">
+                                <span class="title">Worley Noise Generator</span><br>
+                                <div class="description">
+                                    This program generates a dynamic Worley noise pattern on a canvas. The screen is populated with points 
+                                    that move randomly, interact with each other, and are repelled by the canvas edges. Each pixel is colored 
+                                    based on its distance to the nearest point, creating a cellular, almost organic texture. Brighter areas are 
+                                    closer to points, while darker areas are further away.
+                                </div><br>
+                                <span class="description">
+                                    You can interact with the noise by clicking on the canvas. Points near your click will be pushed away, 
+                                    creating ripples and changes in the noise pattern. The movement of the points is influenced by parameters 
+                                    like "brownian motion," "liquid density," and repelling forces, which simulate natural particle motion.
+                                </span><br><br>
+                                <span class="description">
+                                    The simulation continuously updates using requestAnimationFrame, so you see smooth motion and evolving 
+                                    patterns. By modifying the number of points, their speed, or the repelling forces in the code, you can 
+                                    explore different types of dynamic noise and cellular textures.
+                                </span>
+                                <span class="description">
+                                    Open the page''s Console to explore the variables you can modify and learn what each one does.
+                                </span>
+                            </div>
 
-                    </div>
 
-                    <div data-accordion-item class="accordion-item">
-                        
-                        <div class="project-image-container">
-                            <img src="../images/btd.jpeg" alt="">
-                        </div>
-                        <div class="project-description-container">
-                            <div class="project-description">a</div>
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <a href="../../mathChallenges/Worley Noise/index.html" target="_blank" rel="noopener noreferrer">
+                                        <button class="my-button">
+                                            <span class="label">Check It Out</span>
+                                            <span class="gradient-container">
+                                                <span class="gradient"></span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -252,6 +676,9 @@
         </button>
     </div>
     
+    <div class="colored-line">
+        <div class="gradient"></div>
+    </div>
     -->
 
 

@@ -1,4 +1,4 @@
-document.title = "Eating Game";
+document.title = "Don't Miss It";
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 const resetButton = document.querySelector("#resetButton");

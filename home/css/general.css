@@ -1,3 +1,7 @@
+:root{
+    --page-content-width: 85%;
+}
+
 html, body{
     height: 100vh;
     margin: 0;
