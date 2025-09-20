@@ -1,6 +1,8 @@
 const canvas = document.getElementById('gameBoard');
 const ctx = canvas.getContext('2d');
 
+console.log("draw(w, h)");
+
 function draw(_width, _height){
     const width = _width;
     const height = _height;

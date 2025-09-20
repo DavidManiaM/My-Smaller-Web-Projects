@@ -77,6 +77,61 @@
                 background-color: #272727;
                 color: white;
                 border: 0px solid white;
+                position: relative;
+
+                > .accordion-divider{
+
+                    --accent-color: 50;
+
+                    position: absolute;
+                    top: 0;
+                    left: 47.5%;
+                    width: 5%;
+                    height: 100%;
+                    background-color: rgba(43, 43, 43, 1);
+                    background-image: linear-gradient(
+                        90deg,
+                        rgb(var(--accent-color), var(--accent-color), var(--accent-color)) 0%,
+                        rgb(43, 43, 43) 100%
+                    );
+
+                    > .inner{
+                        width: 50%;
+                        height: 90%;
+
+                        position: relative;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        /* border-radius: 50%; */
+                        border-radius: 999px;
+                        
+                        background-color: rgba(43, 43, 43, 1);
+                        background-image: linear-gradient(
+                            90deg,
+                            rgb(43, 43, 43) 0%,
+                            rgb(var(--accent-color), var(--accent-color), var(--accent-color)) 100%
+                        );
+
+                        > .colored-line{
+                            height: 100%;
+
+                            > .gradient{
+                                height: 90%;
+                                width: 2000px;
+                                border-radius: 50%;
+                                /* aspect-ratio: 1; */
+                                animation: rotate 5s linear infinite;
+                            }
+                        }
+                        > .colored-line:hover{
+                            /* box-shadow: 3px 8px 16px 0 rgba(253, 61, 2, 0.5); */
+                            > .gradient{
+                                box-shadow: 8px 8px 16px 0 rgba(253, 61, 2, 0.5);
+                            }
+                        }
+                    }
+                }
     
                 > .accordion-item{
                     
