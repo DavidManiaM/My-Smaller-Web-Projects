@@ -1,8 +1,14 @@
+body{
+    overflow: hidden;
+}
+
 #gameContainer{
     text-align: center;
+    height: 85vh;
 }
 #gameBoard{
     border: 3px solid black;
+    height: 100%;
 }
 #score{
     font-family: "Permanent Marker", cursive;

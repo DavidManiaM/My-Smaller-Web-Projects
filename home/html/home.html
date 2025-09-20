@@ -7,90 +7,93 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/dropdown.css">
+    <link rel="stylesheet" href="../css/accordion.css">
+    <link rel="stylesheet" href="../css/pageContent.css">
+    <link rel="stylesheet" href="../css/my-button.css">
 </head>
 <body>
-    
-    <!-- <h1>My smaller web projects (2022 - 2024)</h1> -->
 
-    <div class="header">
-        <!-- games, mathStuff, other -->
+    <div class="header-wrapper">
+        <div class="header">
 
-        <div class="left">
+            <div class="left">
 
-            <div data-dropdown-container class="dropdown-container" style="display: flex;">
+                <div data-dropdown-container class="dropdown-container">
 
-                <div data-dropdown-header class="dropdown-header hover" style="--scale-factor: 1.05; display: flex;">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6V3.75H11.25V6L9 6C6.10051 6 3.75 8.3505 3.75 11.25V17.909C3.75 19.2019 4.7981 20.25 6.09099 20.25C6.71186 20.25 7.3073 20.0034 7.74632 19.5643L10.8107 16.5H13.1893L16.2537 19.5643C16.6927 20.0034 17.2881 20.25 17.909 20.25C19.2019 20.25 20.25 19.2019 20.25 17.909V11.25C20.25 8.3505 17.8995 6 15 6L12.75 6ZM18.75 11.25C18.75 9.17893 17.0711 7.5 15 7.5L9 7.5C6.92893 7.5 5.25 9.17893 5.25 11.25V17.909C5.25 18.3735 5.62652 18.75 6.09099 18.75C6.31403 18.75 6.52794 18.6614 6.68566 18.5037L10.1893 15H13.8107L17.3143 18.5037C17.4721 18.6614 17.686 18.75 17.909 18.75C18.3735 18.75 18.75 18.3735 18.75 17.909V11.25ZM6.75 12.75V11.25H8.25V9.75H9.75V11.25H11.25V12.75H9.75V14.25H8.25V12.75H6.75ZM15 10.875C15 11.4963 14.4963 12 13.875 12C13.2537 12 12.75 11.4963 12.75 10.875C12.75 10.2537 13.2537 9.75 13.875 9.75C14.4963 9.75 15 10.2537 15 10.875ZM16.125 14.25C16.7463 14.25 17.25 13.7463 17.25 13.125C17.25 12.5037 16.7463 12 16.125 12C15.5037 12 15 12.5037 15 13.125C15 13.7463 15.5037 14.25 16.125 14.25Z" fill="#080341"/>
-                    </svg>
-                    <span>Games</span>
-                    <svg data-dropdown-arrow class="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
-                    </svg>
+                    <div data-dropdown-header class="dropdown-header hover" style="--scale-factor: 1.05; display: flex;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 6V3.75H11.25V6L9 6C6.10051 6 3.75 8.3505 3.75 11.25V17.909C3.75 19.2019 4.7981 20.25 6.09099 20.25C6.71186 20.25 7.3073 20.0034 7.74632 19.5643L10.8107 16.5H13.1893L16.2537 19.5643C16.6927 20.0034 17.2881 20.25 17.909 20.25C19.2019 20.25 20.25 19.2019 20.25 17.909V11.25C20.25 8.3505 17.8995 6 15 6L12.75 6ZM18.75 11.25C18.75 9.17893 17.0711 7.5 15 7.5L9 7.5C6.92893 7.5 5.25 9.17893 5.25 11.25V17.909C5.25 18.3735 5.62652 18.75 6.09099 18.75C6.31403 18.75 6.52794 18.6614 6.68566 18.5037L10.1893 15H13.8107L17.3143 18.5037C17.4721 18.6614 17.686 18.75 17.909 18.75C18.3735 18.75 18.75 18.3735 18.75 17.909V11.25ZM6.75 12.75V11.25H8.25V9.75H9.75V11.25H11.25V12.75H9.75V14.25H8.25V12.75H6.75ZM15 10.875C15 11.4963 14.4963 12 13.875 12C13.2537 12 12.75 11.4963 12.75 10.875C12.75 10.2537 13.2537 9.75 13.875 9.75C14.4963 9.75 15 10.2537 15 10.875ZM16.125 14.25C16.7463 14.25 17.25 13.7463 17.25 13.125C17.25 12.5037 16.7463 12 16.125 12C15.5037 12 15 12.5037 15 13.125C15 13.7463 15.5037 14.25 16.125 14.25Z" fill="#080341"/>
+                        </svg>
+                        <span>Games</span>
+                        <svg data-dropdown-arrow class="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
+                        </svg>
+                    </div>
+
+                    <div data-dropdown-content class="dropdown-content">
+                        <div data-dropdown-item class="dropdown-item">mmmmmmmmmm</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                    </div>
+
                 </div>
 
-                <div data-dropdown-content class="dropdown-content">
-                    <div data-dropdown-item class="dropdown-item">mmmmmmmmmm</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
+                <div data-dropdown-container class="dropdown-container">
+
+                    <div data-dropdown-header class="dropdown-header hover" style="--scale-factor: 1.05; display: flex;">
+                        <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                viewBox="0 0 32 32" xml:space="preserve">
+                            <path id="math--curve_1_" d="M31,31.36H1c-0.199,0-0.36-0.161-0.36-0.36V1h0.72v29.64H31V31.36z M4.254,28.255l-0.509-0.51
+                                l5.67-5.67c-4.32-2.401-6.044,0.019-6.117,0.126l-0.598-0.4c0.021-0.033,2.183-3.149,7.241-0.252l6.123-6.123
+                                c-2.028-4.19-3.885-8.114-2.319-9.681c2.106-2.11,7.807,1.767,9.218,2.782l5.781-5.782l0.51,0.509l-5.669,5.669
+                                c1.436,0.779,2.747,1.019,3.883,0.691c1.515-0.436,2.203-1.763,2.21-1.776l0.644,0.323c-0.033,0.065-0.824,1.612-2.643,2.142
+                                c-1.37,0.398-2.923,0.112-4.621-0.852l-6.123,6.123c2.027,4.19,3.886,8.114,2.319,9.681c-2.11,2.103-7.809-1.767-9.218-2.782
+                                L4.254,28.255z M10.552,21.957c2.103,1.492,6.725,4.256,8.193,2.788c1.183-1.183-0.626-5.068-2.349-8.632L10.552,21.957z
+                                M15.461,5.838c-0.498,0-0.915,0.124-1.207,0.416c-1.182,1.183,0.627,5.069,2.349,8.633l5.845-5.844
+                                C20.764,7.848,17.462,5.838,15.461,5.838z"/>
+                            <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"/>
+                        </svg>
+                        <span>Math Stuff</span>
+                        <svg data-dropdown-arrow class="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
+                        </svg>
+                    </div>
+
+                    <div data-dropdown-content class="dropdown-content">
+                        <div data-dropdown-item class="dropdown-item">mmmmmmmmmm</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                    </div>
+
                 </div>
 
-            </div>
+                <div data-dropdown-container class="dropdown-container">
 
-            <div data-dropdown-container class="dropdown-container" style="display: flex;">
+                    <div data-dropdown-header class="dropdown-header hover" style="--scale-factor: 1.05; display: flex;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 4.55228 13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V10C21 10.5523 20.5523 11 20 11C19.4477 11 19 10.5523 19 10V6.41421L11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L17.5858 5H14ZM5 7C4.44772 7 4 7.44772 4 8V19C4 19.5523 4.44772 20 5 20H16C16.5523 20 17 19.5523 17 19V14.4375C17 13.8852 17.4477 13.4375 18 13.4375C18.5523 13.4375 19 13.8852 19 14.4375V19C19 20.6569 17.6569 22 16 22H5C3.34315 22 2 20.6569 2 19V8C2 6.34315 3.34315 5 5 5H9.5625C10.1148 5 10.5625 5.44772 10.5625 6C10.5625 6.55228 10.1148 7 9.5625 7H5Z" fill="#000000"/>
+                        </svg>
+                        <span>Other</span>
+                        <svg data-dropdown-arrow class="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
+                        </svg>
+                    </div>
 
-                <div data-dropdown-header class="dropdown-header hover" style="--scale-factor: 1.05; display: flex;">
-                    <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                            viewBox="0 0 32 32" xml:space="preserve">
-                        <path id="math--curve_1_" d="M31,31.36H1c-0.199,0-0.36-0.161-0.36-0.36V1h0.72v29.64H31V31.36z M4.254,28.255l-0.509-0.51
-                            l5.67-5.67c-4.32-2.401-6.044,0.019-6.117,0.126l-0.598-0.4c0.021-0.033,2.183-3.149,7.241-0.252l6.123-6.123
-                            c-2.028-4.19-3.885-8.114-2.319-9.681c2.106-2.11,7.807,1.767,9.218,2.782l5.781-5.782l0.51,0.509l-5.669,5.669
-                            c1.436,0.779,2.747,1.019,3.883,0.691c1.515-0.436,2.203-1.763,2.21-1.776l0.644,0.323c-0.033,0.065-0.824,1.612-2.643,2.142
-                            c-1.37,0.398-2.923,0.112-4.621-0.852l-6.123,6.123c2.027,4.19,3.886,8.114,2.319,9.681c-2.11,2.103-7.809-1.767-9.218-2.782
-                            L4.254,28.255z M10.552,21.957c2.103,1.492,6.725,4.256,8.193,2.788c1.183-1.183-0.626-5.068-2.349-8.632L10.552,21.957z
-                            M15.461,5.838c-0.498,0-0.915,0.124-1.207,0.416c-1.182,1.183,0.627,5.069,2.349,8.633l5.845-5.844
-                            C20.764,7.848,17.462,5.838,15.461,5.838z"/>
-                        <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"/>
-                    </svg>
-                    <span>Math Stuff</span>
-                    <svg data-dropdown-arrow class="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
-                    </svg>
-                </div>
+                    <div data-dropdown-content class="dropdown-content">
+                        <div data-dropdown-item class="dropdown-item">mmmmmmmmmm</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                        <div data-dropdown-item class="dropdown-item">b</div>
+                    </div>
 
-                <div data-dropdown-content class="dropdown-content">
-                    <div data-dropdown-item class="dropdown-item">mmmmmmmmmm</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                </div>
-
-            </div>
-
-            <div data-dropdown-container class="dropdown-container" style="display: flex;">
-
-                <div data-dropdown-header class="dropdown-header hover" style="--scale-factor: 1.05; display: flex;">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 4.55228 13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V10C21 10.5523 20.5523 11 20 11C19.4477 11 19 10.5523 19 10V6.41421L11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L17.5858 5H14ZM5 7C4.44772 7 4 7.44772 4 8V19C4 19.5523 4.44772 20 5 20H16C16.5523 20 17 19.5523 17 19V14.4375C17 13.8852 17.4477 13.4375 18 13.4375C18.5523 13.4375 19 13.8852 19 14.4375V19C19 20.6569 17.6569 22 16 22H5C3.34315 22 2 20.6569 2 19V8C2 6.34315 3.34315 5 5 5H9.5625C10.1148 5 10.5625 5.44772 10.5625 6C10.5625 6.55228 10.1148 7 9.5625 7H5Z" fill="#000000"/>
-                    </svg>
-                    <span>Other</span>
-                    <svg data-dropdown-arrow class="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
-                    </svg>
-                </div>
-
-                <div data-dropdown-content class="dropdown-content">
-                    <div data-dropdown-item class="dropdown-item">mmmmmmmmmm</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
-                    <div data-dropdown-item class="dropdown-item">b</div>
                 </div>
 
             </div>
@@ -98,11 +101,112 @@
         </div>
     </div>
 
-    <!-- <div data-dropdown-container class="dropdown-container" style="display: flex;">
+    <div class="page-content-wrapper">
+        <div class="page-content">
+
+            <h1>My smaller web projects (2022 - 2024)</h1>
+
+            <div data-accordion-container class="accordion-container games-accordion">
+
+                <div data-accordion-header class="accordion-header hover" style="--scale-factor: 1.005; display: flex;">
+                    <span>Games</span>
+                    <svg data-accordion-arrow class="accordion-arrow" width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
+                    </svg>
+                </div>
+
+                <div data-accordion-content class="accordion-content">
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/btd.jpeg" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">
+                                <span>
+                                    This is my proudest project so far: a recreation of the popular mobile and PC game 
+                                    <a href="https://bloons.fandom.com/wiki/Bloons_TD_6" target="_blank" rel="noopener noreferrer">Bloons TD 6</a> 
+                                    (BTD6). It’s a tower defense game where players place towers ("monkeys") to pop the enemies ("bloons") before they 
+                                    reach the end of the track. Bloons appear in many types, each with different speed and durability. Some split into 
+                                    weaker bloons when popped, while tougher ones break into multiple layers. Towers can be upgraded along different 
+                                    paths, with each upgrade offering more power at a higher cost.  
+                                    <br><br>
+                                    My version includes three tower types that can be placed using hotkeys: the Dart Monkey (Q), the Tack Shooter (W), 
+                                    and the Banana Farm (E).
+                                </span>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="my-button-wrapper hover" style="--scale-factor: 1.02">
+                                    <button class="my-button">
+                                        <span class="label">Play</span>
+                                        <span class="gradient-container">
+                                            <span class="gradient"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/btd.jpeg" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">a</div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/btd.jpeg" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">a</div>
+                        </div>
+
+                    </div>
+
+                    <div data-accordion-item class="accordion-item">
+                        
+                        <div class="project-image-container">
+                            <img src="../images/btd.jpeg" alt="">
+                        </div>
+                        <div class="project-description-container">
+                            <div class="project-description">a</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/accordion.js"></script>
+
+
+
+
+
+<!-- 
+    <div data-dropdown-container class="dropdown-container">
 
         <div data-dropdown-header class="dropdown-header hover" style="--scale-factor: 1.1; display: flex;">
             <span>asdasdasda</span>
-            <svg data-dropdown-arrow class="dropdown-arrow" width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg data-dropdown-arrow class="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
             </svg>
         </div>
@@ -116,10 +220,43 @@
             <div data-dropdown-item class="dropdown-item">b</div>
         </div>
 
-    </div> -->
-
+    </div> 
     
-    <script src="../js/dropdown.js"></script>
+    
+    <div data-accordion-container class="accordion-container">
+
+        <div data-accordion-header class="accordion-header hover" style="--scale-factor: 1.025; display: flex;">
+            <span>asdasdasda</span>
+            <svg data-accordion-arrow class="accordion-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"/>
+            </svg>
+        </div>
+
+        <div data-accordion-content class="accordion-content">
+            <div data-accordion-item class="accordion-item">mmmmmmmmmm</div>
+            <div data-accordion-item class="accordion-item">b</div>
+            <div data-accordion-item class="accordion-item">b</div>
+            <div data-accordion-item class="accordion-item">b</div>
+            <div data-accordion-item class="accordion-item">b</div>
+            <div data-accordion-item class="accordion-item">b</div>
+        </div>
+
+    </div>
+
+    <div class="my-button-container hover" style="--scale-factor: 1.02">
+        <button class="my-button">
+            <span class="label">Play</span>
+            <span class="gradient-container">
+                <span class="gradient"></span>
+            </span>
+        </button>
+    </div>
+    
+    -->
+
+
+
+
 
 </body>
 </html>

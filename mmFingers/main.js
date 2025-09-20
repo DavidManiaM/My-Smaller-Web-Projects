@@ -62,7 +62,7 @@ class Enemy {
 
     draw = function () {
         ctx.strokeStyle = "lightgrey";
-        ctx.lineWidth = 1;
+        ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.setLineDash([5, 15]);
         if (this.yLength == 1) {
@@ -197,7 +197,7 @@ function spawnEnemy() {
 }
 
 canvas.addEventListener('mousemove', (event) => {
-    mousepos = { x: event.clientX, y: event.clientY };
+    mousepos = { x: event.offsetX, y: event.offsetY };
     player.move();
 });
 

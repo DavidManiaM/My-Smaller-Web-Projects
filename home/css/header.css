@@ -1,38 +1,61 @@
-.header{
+.header-wrapper{
     height: 75px;
-    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: aliceblue;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    align-self: stretch;
-
-    > .left{
+    > .header{
         display: flex;
         flex-direction: row;
-        gap: 128px;
+        align-items: center;
+        justify-content: space-between;
         align-self: stretch;
+        height: 100%;
+        width: 80%;
 
-        > .dropdown-container{
-
+        > .left{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             align-self: stretch;
+            width: 70%;
 
-            > .dropdown-header{
-                display: flex;
-                justify-content: space-between;
-                gap: 12px;
+            > .dropdown-container{
+
                 align-self: stretch;
+                /* box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1); */
 
-                > span{
-                    font-size: 24px;
+                > .dropdown-header{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 12px;
+                    align-self: stretch;
+
+                    > span{
+                        font-size: 24px;
+                    }
+
+                    > svg{
+                        width: 28px;
+                        height: 28px;
+                    }
                 }
 
-                > svg{
-                    width: 28px;
-                    height: 28px;
+                > .dropdown-content{
+
+                    border-radius: 8px;
+                    scrollbar-width: none;
+
+                    > .dropdown-item{
+                        display: flex;
+                        padding: 10px 6px;
+                    }
+
+                    > .dropdown-item:not(:last-of-type){
+                        border-bottom: 1px solid #e2e2e2;
+                    }
                 }
             }
         }
