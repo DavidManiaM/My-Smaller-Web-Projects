@@ -10,9 +10,11 @@ A collection of my mini-games and challenges created in highschool
 1. Clone the repo:
    ```bash
    git clone https://github.com/DavidManiaM/My-Smaller-Web-Projects.git
+   ```
+   Or download the zip file.
 
 ## Usage
-1. Open home/html/home.html in any browser
+1. Open home/html/home.html in any browser.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
