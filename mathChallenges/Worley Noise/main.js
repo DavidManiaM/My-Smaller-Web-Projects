@@ -193,7 +193,7 @@ canvas.addEventListener("mousedown", (event) => {
     }
 });
 
-console.log(`> nr_of_points = 100
+console.log(`> nr_of_points = 175
 The total number of points (or particles) on the canvas that generate the noise pattern.
 
 > point_radius = 2
@@ -206,7 +206,7 @@ Keeps track of the largest distance from any pixel to the nearest point; used fo
 Controls the random movement of each point. Higher values make points move more unpredictably.
 
 > liquid_density = 0.8
-Simulates friction or viscosity. Values closer to 1 slow down point movement, making them “heavier” or more resistant to motion.
+Simulates friction or viscosity. Values closer to 0 slow down point movement, making them “heavier” or more resistant to motion.
 
 > point_max_vel = 5
 Limits the maximum speed (velocity) a point can reach in any direction.
