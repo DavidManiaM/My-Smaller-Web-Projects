@@ -115,7 +115,152 @@
 
         @media screen and (max-width: 760px) {
             display: flex;
-            background-color: red;
+            align-items: center;
+            justify-content: flex-end;
+            width: 95%;
+            /* background-color: red; */
+        }
+
+        .mobile-menu-icon {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 99;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        .mobile-menu-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .mobile-menu-content {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(35, 35, 35);
+            z-index: 100;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+
+            /* Ensure dropdowns inside take full width */
+            .dropdown-container {
+                width: 100%;
+                flex-direction: column;
+
+                .dropdown-header {
+                    width: 100%;
+                    padding: 15px 20px;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                }
+
+                .dropdown-content {
+                    position: static;
+                    /* Stack naturally in mobile */
+                    width: 100%;
+                    box-shadow: none;
+                    background: transparent;
+                    border: none;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
+
+                    background-color: rgba(43, 43, 43, 1);
+                    background-image: linear-gradient(180deg,
+                            rgb(55, 55, 55) 0%,
+                            rgb(43, 43, 43) 100%);
+
+                    flex-direction: column;
+                    display: flex;
+                }
+
+                &.open .dropdown-content {
+                    max-height: 500px;
+                    /* Allow expansion */
+                    border-bottom: 1px solid #444;
+                    margin-bottom: 10px;
+                }
+
+                .dropdown-item {
+                    display: flex;
+                    padding: 0;
+                    border-bottom: 1px solid #555 !important;
+
+                    >a {
+                        transition: 300ms ease;
+                        align-self: stretch;
+                        text-decoration: none;
+                        width: 100%;
+                        padding: 15px 30px;
+                        color: #bbb;
+                        display: block;
+                    }
+                }
+
+                .dropdown-item:hover {
+                    >a {
+                        cursor: pointer;
+                        background: #353535 !important;
+                        padding-left: 40px;
+                        /* Slight indent on hover */
+                    }
+                }
+
+                .dropdown-item:not(:last-of-type) {
+                    border-bottom: 1px solid #e2e2e2;
+                }
+            }
+        }
+
+        .mobile-menu-content.open {
+            transform: translateX(0);
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #444;
+
+            span {
+                font-size: 24px;
+                font-weight: 600;
+                color: #e0e0e0;
+                letter-spacing: 1px;
+            }
+
+            .mobile-menu-close {
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+            }
+        }
+
+        .mobile-menu-items {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
         }
     }
 
